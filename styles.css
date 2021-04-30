@@ -32,6 +32,11 @@ header {
    
     
 }
+
+a {
+    text-decoration: none;
+    color:  #545454;
+}
 main{
     display: flex;
     margin-left: auto;
@@ -117,6 +122,7 @@ button {
 footer {
     background-color: #222222;
     height: 70px;
+    color: #FFFFFF;
     margin-top: 64px; 
     display: flex;
     justify-content: center;
@@ -153,6 +159,17 @@ input {
     border-radius: 4px;
     border: 1px solid #EEEEEE;
     padding-left: 19px;
+    outline: none;
+}
+
+input:hover {
+    cursor: pointer;
+    border: 1px solid #FE0078;
+
+}
+
+input:focus {
+    border-color: #FE0078;
 }
 
 h3 {
@@ -164,57 +181,34 @@ text-align: left;
 /* margin-left: 9px; */
 border-left: 2px solid #FE0078;
 padding-left: 11px;
-margin-bottom: 40px;
+margin-bottom: 25px;
 
 }
 
-h4 {
-    width: 340px;
-    height: 35px;
 
-   
-    /* margin-left: 9px; */
-    padding-left: 13px;
+
+
+.card-lateral ul {
+    margin-bottom: 40px;    
+}
+
+.card-lateral li {
     border-bottom: 2px dashed #EEEEEE;
     font-size: 14px;
     color: #545454;
-    font-weight: 400;
-    margin-bottom: 16px;
-    
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-span {
-    
-    font-size: 14px;
-    color: #545454;
-    font-weight: 400;
-    
+.card-lateral li:hover {
+    border-color:#FE0078  ;
+    color:#FE0078;
+    cursor: pointer;
 }
 
-.tec {
-    padding-left: 221px;
-}
-
-.estilo {
-    padding-left: 214px;
-}
-
-.arte {
-    padding-left: 272px;
-}
-
-.comida {
-    padding-left: 241px;
-}
-
-.aventura {
-    padding-left: 240px;
-}
-
-.moda {
-    padding-left: 254px;
-    margin-bottom: 40px;
+.card-lateral span:first-child {
+    padding: 16px 12px;
 }
 
 .publicidade {
@@ -232,4 +226,6 @@ span {
 
 button:hover {
     background-color: #FE0078;
+    color:#FFFFFF;
 }       
+
